@@ -1,0 +1,30 @@
+{
+    "prog": "fastwriter",
+    "description": "",
+    "log_dir": "/Users/johnfallot/fastwriter/fastwrite/log.py",
+    "export_dir": "/Users/johnfallot/fastwriter/exports",
+    "input_txt": "/Users/johnfallot/fastwriter/context_input.txt",
+    "url": "https://api.eleuther.ai/completion",
+    "iterations": 3,
+    "payload": {
+        "context": "",
+        "top_p": 0.8,
+        "temp": 1,
+        "response_length": 256,
+        "remove_input": false
+    },
+    "headers": {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:102.0) Gecko/20100101 Firefox/102.0",
+        "Accept": "application/json",
+        "Accept-Language": "en-US,en;q=0.5",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Referer": "https://6b.eleuther.ai/",
+        "Content-Type": "application/json",
+        "Origin": "https://6b.eleuther.ai",
+        "DNT": "1",
+        "Connection": "keep-alive",
+        "Sec-Fetch-Dest": "empty",
+        "Sec-Fetch-Mode": "cors",
+        "Sec-Fetch-Site": "same-site"
+    }
+}
