@@ -1,3 +1,6 @@
+r"""Sets up the logger as a stream for the program.
+    """
+    
 import logging
 
 logger = logging.getLogger("fastwriter")

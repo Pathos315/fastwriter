@@ -1,3 +1,6 @@
+r"""The main module for this program.
+    """
+    
 from time import perf_counter
 import requests
 import random
@@ -5,7 +8,7 @@ from json import loads
 
 from fastwrite.config import FastWriteConfig, read_config
 from fastwrite.log import logger
-from fastwrite.utils import change_dir
+from fastwrite.dir import change_dir
 
 def main() -> None:
     """Main function."""
@@ -27,6 +30,14 @@ def main() -> None:
     logger.info("Extraction finished in %s seconds. " % elapsed)
 
 def write(config: FastWriteConfig, recursion: bool = False) -> str:
+    """
+    Params:
+        config: the FastWriteConfig file containing the configuration
+        recurison: bool indicating whether the output should be the next input_txt
+    
+    Returns: 
+        output: string of the generated text, to the length specified in the configuration.
+    """
     output = ""
 
     for i in range(config.iterations):

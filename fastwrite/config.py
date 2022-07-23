@@ -1,4 +1,4 @@
-r"""config contains the dataclass describing
+r"""config.py contains the dataclass describing
     the overall configurations
     and a method to read the config
 
